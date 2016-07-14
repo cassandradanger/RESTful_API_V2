@@ -1,0 +1,22 @@
+{
+  "creatures" : [
+    {"name": "Morbid",
+      "age": 12,
+      "skills": "guitar playing",
+      "id": 0,
+      "like": false
+    },
+    {"name": "Blerg",
+      "age": 13,
+      "skills": "cooking",
+      "id": 1,
+      "like": false
+    },
+    {"name": "Steve",
+      "age": 65,
+      "skills": "wine pairing",
+      "id": 2,
+      "like": false
+    }
+  ]
+}
