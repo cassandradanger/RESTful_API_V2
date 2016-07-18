@@ -41,7 +41,7 @@ $(document).ready(function(){
 
             $.ajax({
                 method: "POST",
-                url: "/getCreature",
+                url: "/getCreature/" + creatureID,
                 data: like
             }).done(function(response){
                 console.log(response);

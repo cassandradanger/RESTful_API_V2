@@ -12,9 +12,12 @@ router.get('/getCreature', function(req, res, next) {
   res.sendFile(path.resolve(__dirname, '../views/data.json'))
 });
 
-router.post('/getCreature', function(req, res, next) {
+router.post('/getCreature/:id', function(req, res, next) {
+  console.log("post ID", req.body.id);
   console.log("post hit");
-  console.log(req.body.like);
+  console.log("post like", req.body.like);
+  creatures.findOneAndUpdate({_id: req.body.id, like: req.body.like});
+
 });
 
 
